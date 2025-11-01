@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pune Tourist Places</title>
+     <link rel="icon" href="\img\mha.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+     .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 32%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+      .card img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 15px 0;
+        text-align: center;
+      }
+      .category-box {
+        background: #f1f1f1;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+        font-weight: bold;
+      }
+      .category-box span {
+        font-weight: normal;
+        color: #555;
+      }
+      .description {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.6;
+      }
+      .actions {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .actions span {
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tourist Places</h2>
+
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="/img/pune/rajiv gandhi.png" alt="Rajiv Gandhi Zoological Park" />
+        <div class="card-body">
+          <div class="card-title">
+            राजीव गांधी प्राणीशास्त्र उद्यान आणि वन्यजीव संशोधन केंद्र, कात्रज
+          </div>
+          <div class="category-box">
+            Category > <span>नैसर्गिक / निसर्गरम्य सौंदर्य</span>
+          </div>
+          <p class="description">
+            सध्या, राजीव गांधी प्राणीशास्त्र उद्यानात सुमारे 60 वन्य प्राण्यांच्या प्रजाती आहेत, ज्यामध्ये स्तनधारी, पक्षी आणि सरिसृप यांचा समावेश आहे...
+          </p>
+          <div class="actions">
+            <span>📍 Direction</span> <span>🔗 Share</span> <span>✖</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="/img/pune/lal mahal.png" alt="Lal Mahal" />
+        <div class="card-body">
+          <div class="card-title">लाल महाल</div>
+          <div class="category-box">Category > <span>ऐतिहासिक</span></div>
+          <p class="description">
+            लाल महाल (Red Palace) पुण्यातील सर्वात प्रसिद्ध स्मारकांपैकी एक आहे. वर्षी...
+          </p>
+          <div class="actions">
+            <span>📍 Direction</span> <span>🔗 Share</span> <span>✖</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="/img/pune/sarasbaug.png" alt="Sarasbaug-Peshve Park" />
+        <div class="card-body">
+          <div class="card-title">सारसबाग-पीशवे पार्क</div>
+          <div class="category-box">
+            Category > <span>साहस, धार्मिक</span>
+          </div>
+          <p class="description">
+            या उद्यानांचा समावेश पुणे शहरातील स्वर्गद्वाराजवळ आहे. बागांमध्ये हिरवागार लॉन आहे. येथे एक जॉगिंग ट्रॅक देखील आहे...
+          </p>
+          <div class="actions">
+            <span>📍 Direction</span> <span>🔗 Share</span> <span>✖</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="/img/pune/khadakwasala dam.png" alt="Khadakwasala Dam" />
+        <div class="card-body">
+          <div class="card-title">खडकवसला धरण</div>
+          <div class="category-box">
+            Category > <span>नैसर्गिक / निसर्गरम्य सौंदर्य</span>
+          </div>
+          <p class="description">
+            खडकवसला धरण हे मुठा नदीवर स्थित आहे, जे शहराच्या 20 किमी अंतरावर आहे.
+            of Pune. This dam is one…
+          </p>
+          <div class="actions">
+            <span>📍 Direction</span> <span>🔗 Share</span> <span>✖</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="/img/pune/shivneri fort.png" alt="Shivneri Fort" />
+        <div class="card-body">
+          <div class="card-title">शिवनेरी किल्ला</div>
+          <div class="category-box">Category > <span>ऐतिहासिक</span></div>
+          <p class="description">
+            शिवनेरी किल्ला हा 17 व्या शतकातील लष्करी किल्ला आहे जो पुणे जिल्ह्यातील जुन्नरजवळ स्थित आहे. हा किल्ला छत्रपती शिवाजी महाराजांचा जन्मस्थान आहे…
+          </p>
+          <div class="actions">
+            <span>📍 Direction</span> <span>🔗 Share</span> <span>✖</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="/img/pune/shaniwarwada.png" alt="Shaniwar Wada " />
+        <div class="card-body">
+          <div class="card-title">शनीवार वाडा</div>
+          <div class="category-box">Category > <span>ऐतिहासिक</span></div>
+          <p class="description">
+            शनीवार वाडा हा 13 मजली पेशव्यांचा महाल आहे जो बाजीराव-I द्वारे 1736 मध्ये बांधला गेला. हा मुख्यालय होता…
+          </p>
+          <div class="actions">
+            <span>📍 Direction</span> <span>🔗 Share</span> <span>✖</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
