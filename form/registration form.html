@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      .container {
+        border: 1px solid grey;
+        min-height: 100px;
+        width: 80%;
+        padding: 20px;
+        margin: 20px auto;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .form-heading h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 5px 10px;
+        vertical-align: top;
+      }
+
+      label {
+        display: inline-block;
+        width: 150px;
+      }
+
+      .form-data input[type="text"],
+      .form-data input[type="number"],
+      .form-data input[type="email"],
+      .form-data input[type="date"],
+      .form-data select,
+      .add {
+        width: 80%;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"],
+      input[type="file"] {
+        width: auto;
+        margin: 5px;
+      }
+
+      .button-row {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .btnSub,
+      .btnClr {
+        border: none;
+        background-color: lightgray;
+        padding: 5px 14px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btnSub {
+        color: green;
+      }
+
+      .btnClr {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-heading">
+        <h1>Registration Form</h1>
+      </div>
+
+      <form>
+        <div class="form-data">
+          <table>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td>
+                <input type="text" id="name" name="name" autocomplete="off" />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="age">Age</label></td>
+              <td>
+                <input type="number" id="age" name="age" autocomplete="off" />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="mobile">Mobile</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="mobile"
+                  name="mobile"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="off"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="gender">Gender</label></td>
+              <td>
+                <input type="radio" id="male" name="gender" value="Male" /> Male
+                <input type="radio" id="female" name="gender" value="Female" />
+                Female
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="dob">DOB</label></td>
+              <td><input type="date" i  d="dob" name="dob" /></td>
+            </tr>
+
+            <tr>
+              <td><label for="skills">Skills</label></td>
+              <td>
+                <input type="checkbox" value="Python" /> Python
+                <input type="checkbox" value="Java" /> Java
+                <input type="checkbox" value="HTML" /> HTML
+                <input type="checkbox" value="CSS" /> CSS
+                <input type="checkbox" value="JS" /> JavaScript
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="address">Address</label></td>
+              <td>
+                <textarea id="address" name="address" class="add"></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="country">Country</label></td>
+              <td>
+                <select id="country" name="country" class="add">
+                  <option value="">Select</option>
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                  <option>Japan</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="city">City</label></td>
+              <td>
+                <select id="city" name="city" class="add">
+                  <option value="">Select</option>
+                  <option>Mumbai</option>
+                  <option>Delhi</option>
+                  <option>Pune</option>
+                  <option>Bengluru</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="photo">Upload Photo</label></td>
+              <td><input type="file" id="photo" name="photo" /></td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="button-row">
+                <button type="submit" class="btnSub">Submit</button>
+                <button type="reset" class="btnClr">Clear</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </body>
+</html> 
