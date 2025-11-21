@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* center everything horizontally */
+      }
+
+      .main-head {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .main-head h3 {
+        color: #555;
+        font-weight: normal;
+      }
+
+      /* container for form + boxes */
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        max-width: 1200px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        width: 100%;
+        max-width: 700px;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      input,
+      select {
+        width: 95%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Stylish line beside headings */
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: #333;
+        margin: 25px 0 10px;
+      }
+
+      .section-title::after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background-color: #333;
+      }
+
+      .note {
+        font-size: 0.9em;
+        color: gray;
+      }
+
+      /* side boxes beside table */
+      .side-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 208px;
+        width: 350px;
+      }
+
+      .info-box {
+        border: 1px solid #000;
+        background-color: #e0e0e0;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 50px;
+      }
+
+      .info-box h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .info-box p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* Responsive view */
+      @media (max-width: 1000px) {
+        .form-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .side-boxes {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-head">
+      <h3>*Items marked with an asterisk are required</h3>
+     
+    </div>
+
+    <div class="form-container">
+      <!-- FORM -->
+      <form action="">
+        <table>
+          <tr>
+            <h2 class="section-title">Personal Information</h2>            <td><label for="fname"><b>First Name* :</b></label></td>
+            <td><input type="text" id="fname" name="fname" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="lname"><b>Last Name* :</b></label></td>
+            <td><input type="text" id="lname" name="lname" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="address1">Address :</label></td>
+            <td>
+              <input
+                type="text"
+                id="address1"
+                name="address1"
+                placeholder="Street address"
+                required
+              /><br /><br />
+              <input
+                type="text"
+                id="address2"
+                name="address2"
+                placeholder="Apartment, suite, unit, etc. (optional)"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="city">City* :</label></td>
+            <td><input type="text" id="city" name="city" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="state">State* :</label></td>
+            <td><input type="text" id="state" name="state" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="zip">Zip/Postal Code* :</label></td>
+            <td><input type="text" id="zip" name="zip" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="country">Country* :</label></td>
+            <td>
+              <select name="country" id="country" required>
+                <option value="">Choose...</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Contact Section -->
+          <tr>
+            <td colspan="2">
+              <h2 class="section-title">Contact Information</h2>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email* :</label></td>
+            <td>
+              <input type="email" id="email" name="email" required />
+              <div class="note">
+                We will not sell or disclose your email address to anyone.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="reemail">Re-enter Email* :</label></td>
+            <td>
+              <input type="email" id="reemail" name="reemail" required />
+              <div class="note">
+                Must match the email address you just entered.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone Number* :</label></td>
+            <td><input type="tel" id="phone" name="phone" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="fax">Fax :</label></td>
+            <td><input type="tel" id="fax" name="fax" /></td>
+          </tr>
+        </table>
+      </form>
+
+      <!-- SIDE BOXES -->
+      <div class="side-boxes">
+        <div class="info-box">
+          <h1>Personal Information Form</h1>
+          <p>
+            Please enter your name and address as they are listed for your debit
+            card, credit card, or bank account.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h1>Contact Information</h1>
+          <p>
+            Please enter your full email address, for example, name@domain.com.
+            It is important that you provide a valid, working email address that
+            you have access to, as it must be verified before you can complete
+            your account.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

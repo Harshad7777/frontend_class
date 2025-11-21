@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Guide Form</title>
+</head>
+<body>
+
+  <p>Please complete the form below to download your free guide.</p>
+  <p><b>Fields marked with a * are required.</b></p>
+
+  <form>
+    <table>
+      <tr>
+        <td><b>First name*:</b></td>
+        <td><input type="text" name="fname" required></td>
+      </tr>
+
+      <tr>
+        <td><b>Last name*:</b></td>
+        <td><input type="text" name="lname" required></td>
+      </tr>
+
+      <tr>
+        <td><b>Email*:</b></td>
+        <td><input type="email" name="email" required></td>
+      </tr>
+
+      <tr>
+        <td><b>Confirm email*:</b></td>
+        <td><input type="email" name="confirm_email" required></td>
+      </tr>
+
+      <tr>
+        <td><b>Company*:</b></td>
+        <td><input type="text" name="company" required></td>
+      </tr>
+
+      <tr>
+        <td><b>Job title:</b></td>
+        <td><input type="text" name="jobtitle"></td>
+      </tr>
+
+      <tr>
+        <td><b>Country*:</b></td>
+        <td>
+          <select name="country" required>
+            <option>Choose...</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Submit your enquiry"></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
