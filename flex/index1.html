@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Layout</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    height: 80px;
+}
+
+.logo {
+    width: 25%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.heading {
+    width: 75%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* MENU */
+.menu {
+    background: yellow;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SECTIONS ROW */
+.sections {
+    display: flex;
+    height: 120px;
+}
+
+.sec {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sec1 { background: blue; color: white; }
+.sec2 { background: #555; color: white; }
+.sec3 { background: plum; }
+
+/* MAIN AREA */
+.main {
+    display: flex;
+    height: 350px;
+}
+
+.content {
+    flex: 3;
+    background: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.sidebar {
+    flex: 1;
+    background: olive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer 
+{
+    background: lightsteelblue;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="heading">Website Heading</div>
+    </header>
+
+    <nav class="menu">MENU</nav>
+ 
+    <div class="sections">
+        <div class="sec sec1">SECTION 1</div>
+        <div class="sec sec2">SECTION 2</div>
+        <div class="sec sec3">SECTION 3</div>
+    </div>
+
+    <div class="main">
+        <div class="content">PAGE CONTENTS</div>
+        <aside class="sidebar">SIDE BAR</aside>
+    </div>
+
+    <footer>PAGE FOOTER</footer>
+
+</div>
+
+</body>
+</html>

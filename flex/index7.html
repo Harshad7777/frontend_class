@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid black;
+        }
+
+        /* Header */
+        .header {
+            background-color: #8fa3b8;
+            padding: 20px;
+            font-size: 22px;
+        }
+
+        /* Slider */
+        .slider {
+            background-color: #eee;
+            padding: 40px;
+            font-size: 20px;
+        }
+
+        /* Spacer */
+        .spacer {
+            background-color: #b48a82;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Article common style */
+        .article {
+            background-color: #8f8ac0;
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        /* Section rows */
+        .row {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .row.three .article {
+            flex: 1;
+        }
+
+        .row.four .article {
+            flex: 1;
+        }
+
+        /* Mixed section */
+        .row.mixed {
+            background-color: #c38a8a;
+        }
+
+        .big-article {
+            flex: 2;
+            background-color: #8f8ac0;
+            padding: 40px;
+        }
+
+        .side-articles {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Green rows */
+        .row.green {
+            background-color: #8fc1a9;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #ddd;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">Header</div>
+
+        <div class="slider">Slider-Images</div>
+
+        <div class="spacer">Spacer</div>
+
+        <!-- 3 Articles -->
+        <div class="row three" style="background-color:#9bc4bd;">
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+        </div>
+
+        <!-- 4 Articles -->
+        <div class="row four" style="background-color:#c9c09a;">
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+        </div>
+
+        <!-- Mixed Articles -->
+        <div class="row mixed">
+            <div class="big-article">Article</div>
+            <div class="side-articles">
+                <div class="article">Article</div>
+                <div class="article">Article</div>
+            </div>
+        </div>
+
+        <!-- 3 Articles -->
+        <div class="row green">
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+            <div class="article">Article</div>
+        </div>
+
+        <div class="footer">Copyright</div>
+
+    </div>
+
+</body>
+</html>

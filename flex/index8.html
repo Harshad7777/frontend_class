@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Layout</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(to right,#16c0a3,#3aa6e6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 180px);
+}
+
+/* Common box */
+.box{
+    padding:20px;
+    color:#fff;
+}
+
+.box h3{
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.box p{
+    font-size:14px;
+    line-height:1.4;
+}
+
+/* Colors */
+.dark{ background:#2f2f2a; }
+.blue{ background:#3da0ea; }
+.green{ background:#18c7a3; }
+.navy{ background:#4e6389; }
+
+/* Grid spans */
+.left-big{
+    grid-row:2 / span 2;
+    grid-column:1;
+}
+
+.center-big{
+    grid-row:2;
+    grid-column:2 / span 2;
+}
+
+.right-mid{
+    grid-row:2 / span 2;
+    grid-column:4;
+}
+
+.bottom-blue{
+    grid-row:3;
+    grid-column:2;
+}
+
+.bottom-green{
+    grid-row:3;
+    grid-column:3;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Top Row -->
+    <div class="box dark">
+        <h3>HEADING</h3>
+        <p>Your content goes here. Edit or remove this text inline.</p>
+    </div>
+
+    <div class="box blue">
+        <h3>HEADING</h3>
+    </div>
+
+    <div class="box green">
+        <h3>HEADING</h3>
+    </div>
+
+    <div class="box dark">
+        <h3>HEADING</h3>
+    </div>
+
+    <!-- Middle -->
+    <div class="box navy left-big">
+        <h3>HEADING</h3>
+        <p>Your content goes here.</p>
+    </div>
+
+    <div class="box dark center-big">
+        <h3>HEADING</h3>
+        <p>
+            Your content goes here. Edit or remove this text inline or in the
+            module Content settings. You can also style every aspect of this
+            content and even apply custom CSS to this text.
+        </p>
+    </div>
+
+    <div class="box navy right-mid">
+        <h3>HEADING</h3>
+        <p>Your content goes here. Edit or remove this text inline.</p>
+    </div>
+
+    <!-- Bottom -->
+    <div class="box blue bottom-blue">
+        <h3>HEADING</h3>
+        <p>Your content goes here.</p>
+    </div>
+
+    <div class="box green bottom-green">
+        <h3>HEADING</h3>
+        <p>Your content goes here.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
