@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background: #f0fbfb;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.dark {
+  background: #079ea1;
+  color: #fff;
+}
+
+.white {
+  background: #fff;
+  color: #079ea1;
+}
+
+.outline {
+  border: 2px solid #079ea1;
+  color: #079ea1;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  color: #fff;
+}
+
+.feature {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.black { background: #000; }
+.teal { background: #2ec4c6; }
+.teal-dark { background: #079ea1; }
+
+/* ABOUT */
+.about {
+  text-align: center;
+  padding: 60px;
+}
+
+/* SPLIT */
+.split {
+  display: flex;
+}
+
+.split img {
+  width: 50%;
+}
+
+.split-text {
+  width: 50%;
+  padding: 60px;
+  background: #2ec4c6;
+  color: #fff;
+}
+
+/* SERVICES */
+.services {
+  padding: 60px;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background: #2ec4c6;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* CTA */
+.cta {
+  display: flex;
+}
+
+.cta img {
+  width: 50%;
+}
+
+.cta-text {
+  width: 50%;
+  padding: 60px;
+  background: #d8efef;
+}
+
+/* CONTACT */
+.contact {
+  background: #2ec4c6;
+  padding: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+/* BOTTOM */
+.bottom {
+  text-align: center;
+  padding: 60px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero,
+  .features,
+  .split,
+  .cta {
+    flex-direction: column;
+  }
+
+  .split img,
+  .split-text,
+  .cta img,
+  .cta-text {
+    width: 100%;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
