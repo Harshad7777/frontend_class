@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Landing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: #f5f7fb;
+        color: #333;
+      }
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      /* Hero */
+      .hero {
+        position: relative;
+        height: 420px;
+        background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop")
+          center/cover no-repeat;
+      }
+      .nav {
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 28px;
+        color: #0f0b0b;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .menu {
+        font-size: 24px;
+      }
+
+      .hero-card {
+        position: absolute;
+        left: 8%;
+        top: 32%;
+        background: #fff;
+        padding: 26px 28px;
+        max-width: 420px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+      .hero-card h1 {
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 14px;
+      }
+
+      .btn1 {
+        display: inline-block;
+        padding: 10px 18px;
+        background: #7388b2;
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        border-radius: 2px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 18px;
+        color: #fff;
+        background: #2f6fed;
+        text-decoration: none;
+        font-size: 13px;
+        border-radius: 2px;
+      }
+
+      .cta {
+        background: #1e4fb8;
+        color: #fff;
+        padding: 22px 0;
+      }
+      .cta .row {
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+      .cta input {
+        padding: 10px 12px;
+        border: none;
+        width: 260px;
+      }
+      .CTAPA {
+        padding: 27px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn3 {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #2f6fed;
+    background: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 2px;
+      }
+
+      .section {
+        padding: 40px 0;
+      }
+      .section h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: #555;
+      }
+      .schp p {
+        display: flex;
+        justify-content: center;
+        margin: 26px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+      .card {
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      }
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .card .p {
+        padding: 14px;
+      }
+      .card h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+      .card p {
+        font-size: 13px;
+        color: #666;
+      }
+
+      .stats {
+        background: linear-gradient(135deg, #244ea3, #2b78ff);
+        color: #fff;
+        padding: 36px 0;
+      }
+      .stats .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        gap: 12px;
+      }
+      .num {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .label {
+        font-size: 12px;
+        opacity: 0.9;
+      }
+      .shp {
+        justify-items: center;
+        display: block;
+      }
+      .shp h2 {
+        padding: 10px;
+      }
+      .shp p {
+        padding: 10px;
+      }
+
+      .experience {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 20px;
+        align-items: center;
+      }
+      .experience img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+      .experience h2 {
+        color: #6d6dd3;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .experience p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="nav">
+        <div class="logo">Consulting</div>
+        <div class="menu">☰</div>
+      </div>
+      <div class="hero-card">
+        <h1>Communication is <br>the key for any <br> Global Business</h1>
+        <a href="#" class="btn1">READ MORE</a>
+        <a href="#" class="btn">READ MORE</a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container row">
+        <h2>Would you like to be a part of our future success?</h2>
+        <div class="CTAPA">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            porro!
+          </p>
+          <a href="#" class="btn3">SUBSCRIBE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="schp">
+        <h2>Our Capacity</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          harum molestiae fugit. Quaerat, cumque libero!
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+          <div class="p">
+            <h3>Business And Marketing</h3>
+            <p>
+              Professional solutions to grow your business and reach new
+              markets.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+          <div class="p">
+            <h3>Insurance Team</h3>
+            <p>
+              Reliable insurance services designed for long‑term protection.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+          <div class="p">
+            <h3>Best Technology</h3>
+            <p>
+              Modern tools and technologies to keep you ahead of competition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="shp">
+        <h2>We advice you you call the right decision</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+          commodi.
+        </p>
+      </div>
+
+      <div class="container grid">
+        <div>
+          <div class="num">92</div>
+          <div class="label">PROJECTS</div>
+        </div>
+        <div>
+          <div class="num">25</div>
+          <div class="label">CONSULTANTS</div>
+        </div>
+        <div>
+          <div class="num">27</div>
+          <div class="label">AWARDS</div>
+        </div>
+        <div>
+          <div class="num">187</div>
+          <div class="label">CLIENTS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container experience">
+      <img
+        src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+      <div>
+        <h2>We Have 25 Years Experience</h2>
+        <p>
+          We deliver trusted consulting services with decades of experience,
+          helping organizations achieve sustainable growth and success.
+        </p>
+        <a href="#" class="btn">LEARN MORE</a>
+      </div>
+    </section>
+  </body>
+</html>
